@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="puzzle-icon.png">
+    <title>Puzzle Game</title>
+</head>
+<body>
+    <div class="page" id="page">
+        <header class="page__header header">
+            <div class="header__buttons buttons">
+                <button class="button" id="shuffle">Start & Shuffle</button>
+                <button class="button" id="stop">Stop</button>
+                <button class="button" id="save">Save</button>
+                <button class="button" id="results">Results</button>
+            </div>
+            <div class="stats">
+                <div class="stat">Moves: <span id="moves">0</span></div>
+                <div class="stat">Time: <span id="minutes">00</span>:<span id="seconds">00</span></div>
+            </div>
+        </header>
+        <div class= "game" id="game"></div>
+        <div class="sizes" id="sizes">
+            <button class="size" data-size="3">3x3</button>
+            <button class="size" data-size="4">4x4</button>
+            <button class="size" data-size="5">5x5</button>
+        </div>
+        <div class="results">
+            <div class="results__header">Results</div>
+            <ol class="results__list" id="results-list">
+            </ol>
+        </div>
+        <!-- <div class="win-modal"></div> -->
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
