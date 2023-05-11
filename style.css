@@ -188,6 +188,14 @@ h1 {
 @media (max-width: 515px) {
     .results {
         top: 120px;
+        
+    }
+}
+
+@media (max-width: 494px) {
+    .results {
+        width: 90%;
+        height: 430px;
     }
 }
 

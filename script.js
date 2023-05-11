@@ -344,6 +344,14 @@ window.onload = function() {
     document.getElementById('results-list').parentElement.classList.toggle('results-showed');
   })
 
+  window.onclick = function(event) {
+    if (event.target === document.getElementById('results')) return;
+    const resultShowed = document.getElementById('results-list').parentElement.classList.contains('results-showed');
+    if (resultShowed) {
+      document.getElementById('results-list').parentElement.classList.remove('results-showed');
+    }
+  }
+
   document.getElementById('sizes').addEventListener('click', (event) => {
     const changeSizeButton = event.target.closest('.size');
 
